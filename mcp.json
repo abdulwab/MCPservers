@@ -1,0 +1,35 @@
+{
+  "servers": [
+    {
+      "id": "openai-agents-mcp",
+      "name": "OpenAI Agents SDK MCP",
+      "description": "Provides documentation context for the OpenAI Agents Python SDK",
+      "endpoint": "http://localhost:8000/mcp/openai-agents/context",
+      "libraries": ["openai-agents", "agents"],
+      "fallbackEndpoint": "http://localhost:8000/mcp/openai/context"
+    },
+    {
+      "id": "openai-mcp",
+      "name": "OpenAI SDK MCP",
+      "description": "Provides documentation context for the OpenAI Python SDK",
+      "endpoint": "http://localhost:8000/mcp/openai/context",
+      "libraries": ["openai"]
+    },
+    {
+      "id": "firebase-mcp",
+      "name": "Firebase SDK MCP",
+      "description": "Provides documentation context for the Firebase JavaScript SDK",
+      "endpoint": "http://localhost:8000/mcp/firebase/context",
+      "libraries": ["firebase"]
+    },
+    {
+      "id": "aws-mcp",
+      "name": "AWS SDK MCP",
+      "description": "Provides documentation context for the AWS Python SDK (boto3)",
+      "endpoint": "http://localhost:8000/mcp/aws/context",
+      "libraries": ["boto3", "aws"]
+    }
+  ],
+  "defaultServer": "openai-agents-mcp",
+  "setupInstructions": "To use these MCP servers, ensure the Multi-MCP Server is running with: `uvicorn main:app --host 0.0.0.0 --port 8000`"
+} 
