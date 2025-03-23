@@ -1,6 +1,6 @@
 # MCPservers
 
-A project that hosts multiple Machine Context Provider (MCP) servers on different endpoints, allowing each one to serve different documentation sources or SDKs dynamically.
+A project that hosts multiple Model Context Provider (MCP) servers on different endpoints, enabling AI-powered contextual assistance by dynamically serving relevant documentation from various SDKs, APIs, and libraries. These servers bridge the gap between developers and documentation, providing real-time, context-aware information to enhance coding workflows.
 
 ## Features
 
