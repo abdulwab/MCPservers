@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "backend": {
+      "command": "uvicorn",
+      "args": ["main:app", "--host", "0.0.0.0", "--port", "8002"]
+    },
+    "frontend": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "http://localhost:8001/sse"]
+    }
+  }
+} 
